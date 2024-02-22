@@ -42,13 +42,13 @@ function showAlphabedOnScreen(even) {
 function showKeyboardColor(even) {
   const findKey = document.getElementById(even);
   findKey.classList.add("text-lime-50");
-  findKey.classList.add("bg-red-400");
+  findKey.classList.add("bg-red-500");
 }
 // Remove Key Board Color
 function removeKeyboardColor(even) {
   const findKey = document.getElementById(even);
   findKey.classList.remove("text-lime-50");
-  findKey.classList.remove("bg-red-400");
+  findKey.classList.remove("bg-red-500");
 }
 
 // Number Plus Show On Screen
