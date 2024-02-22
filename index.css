@@ -1,0 +1,7 @@
+.key_board {
+  font-size: 25px;
+  color: rgb(228, 1, 248);
+  font-weight: 800;
+  margin: 0 5px 5px;
+  text-transform: capitalize;
+}
