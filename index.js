@@ -49,23 +49,27 @@ function removeKeyboardColor(even) {
   const findKey = document.getElementById(even);
   findKey.classList.remove("text-lime-50");
   findKey.classList.remove("bg-red-400");
-  console.log("fsfsdfsdfdfsdfs");
 }
+
+// Number Plus Show On Screen
+
+function numberPlus() {
+  const numberSpan = document.getElementById("number_plus");
+  const numbervalue = numberSpan.innerText;
+  const number = parseInt(numbervalue);
+  numberSpan.innerText = number + 1;
+  console.log(numberSpan.innerText);
+}
+
 document.addEventListener("keyup", conditionFunction);
 function conditionFunction(even) {
   const keyPress = even.key;
-  console.log(keyPress);
   const screenValue = document.getElementById("ShowItem");
   const screenValuetext = screenValue.innerText;
   const screenValuetextLower = screenValuetext.toLowerCase();
-  console.log(screenValuetextLower);
-
   if (keyPress === screenValuetextLower) {
-    console.log("innerzdf", screenValuetextLower);
     removeKeyboardColor(keyPress);
-    continueGame();
-    if (keyPress != screenValuetextLower) {
-      console.log("Fucccccckkk", screenValuetextLower);
-    }
+    numberPlus();
+    return continueGame();
   }
 }
